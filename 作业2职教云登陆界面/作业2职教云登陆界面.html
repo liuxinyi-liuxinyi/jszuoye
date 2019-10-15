@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>执教云登陆界面</title>
+	<style>
+		#eye{
+			vertical-align: middle;
+			/* 水平对齐 */
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<input type="password" name="mima" value="" id="pass">
+	<img src="tupian/eyenone.png" alt="闭眼" id="eye">
+	<script>
+		var pass=document.getElementById('pass');
+		var eye=document.getElementById('eye');
+		eye.onclick=function () {
+			if(pass.type=='password'){
+					pass.type='text';
+					this.src='tupian/eyesee.png';
+					this.alt='睁眼';
+			}else{
+					pass.type='password';
+					this.src='tupian/eyenone.png';
+					this.alt='闭眼';
+
+			}
+			
+		}
+	
+	</script>
+</body>
+</html>

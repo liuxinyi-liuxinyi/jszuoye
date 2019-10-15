@@ -10,6 +10,7 @@
 		#small img{
 			float: left;
 			width: 66px;
+			
 			height: 66px;
 			cursor:pointer;
 			border: 2px solid white;
@@ -41,36 +42,54 @@
 		var s3=document.getElementById('s3');
 		var s4=document.getElementById('s4');
 		var s5=document.getElementById('s5');
+		鼠标滑过第一个小图时的操作
 		s1.onmouseover=function () {
 			b.src=this.src;
 			this.className='act';
+			s2.className='';
+			s3.className='';
+			s4.className='';
 			s5.className='';
 
 		}
+		// 鼠标滑过第二个小图时的操作
 		s2.onmouseover=function () {
 			b.src=this.src;
 			this.className='act';
 			s1.className='';
+			s3.className='';
+			s4.className='';
+			s5.className='';
 		}
+		// 鼠标滑过第三个小图时的操作
 		s3.onmouseover=function () {
 			b.src=this.src;
 			this.className='act';
+			s1.className='';
 			s2.className='';
+			s4.className='';
+			s5.className='';
 		}
+		// 鼠标滑过第四个小图时的操作
 		s4.onmouseover=function () {
 			b.src=this.src;
 			this.className='act';
+			s1.className='';
+			s2.className='';
 			s3.className='';
+			s5.className='';
 		}
+		鼠标滑过第五个小图时的操作
 		s5.onmouseover=function () {
 			b.src=this.src
 			this.className='act';
+			s1.className='';
+			s2.className='';
+			s3.className='';
 			s4.className='';
 		}
-	
 
-	
-		
-	</script>
+
+			</script>
 </body>
 </html>

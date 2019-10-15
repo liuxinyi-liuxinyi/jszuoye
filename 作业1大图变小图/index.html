@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#small{
+			height: 70px;
+		}
+		#small img{
+			float: left;
+			width: 66px;
+			
+			height: 66px;
+			cursor:pointer;
+			border: 2px solid white;
+		}
+		#small img.act{
+			border-color:red;
+		}
+	</style>
+</head>
+<body>
+	<li> <a href="登录.html" target="_self">职教云登录界面</a> </li>
+	<div id="show">
+		<div id="big">
+			<img src="image/1.jpg" alt="01" id="b"><div>
+		</div>
+		</div>
+		<div id="small">
+			<img src="image/1.jpg" alt="01" id="s1">
+			<img src="image/2.jpg" alt="02" id="s2">
+			<img src="image/3.jpg" alt="03" id="s3">
+			<img src="image/4.jpg" alt="04" id="s4">
+			<img src="image/5.jpg" alt="05" id="s5">
+		</div>
+	</div>
+	<script>
+		// var b=document.getElementById('b');
+		// var s1=document.getElementById('s1');
+		// var s2=document.getElementById('s2');
+		// var s3=document.getElementById('s3');
+		// var s4=document.getElementById('s4');
+		// var s5=document.getElementById('s5');
+		// // 鼠标滑过第一个小图时的操作
+		// s1.onmouseover=function () {
+		// 	b.src=this.src;
+		// 	this.className='act';
+		// 	s2.className='';
+		// 	s3.className='';
+		// 	s4.className='';
+		// 	s5.className='';
+
+		// }
+		// var imgs=document.getElementsByTagName('img')
+		var b=document.getElementBy
+		for(var i=1;i<=5;i++){
+			imgs[i].onmouseover=function (){
+				imgs[0].src=this.src;
+				// 大图地址替换成当前鼠标滑过小图的地址
+				// imgs[1].className='';
+				// imgs[2].className='';
+				// imgs[3].className='';
+				// imgs[4].className='';
+				// imgs[5].className='';
+				for(var i=1;i<=5;i++){
+					imgs[i].className='';
+				}
+
+				this.className='act';
+			}
+		}
+		// 鼠标滑过第二个小图时的操作
+		// s2.onmouseover=function () {
+		// 	b.src=this.src;
+		// 	this.className='act';
+		// 	s1.className='';
+		// 	s3.className='';
+		// 	s4.className='';
+		// 	s5.className='';
+		// }
+		// // 鼠标滑过第三个小图时的操作
+		// s3.onmouseover=function () {
+		// 	b.src=this.src;
+		// 	this.className='act';
+		// 	s1.className='';
+		// 	s2.className='';
+		// 	s4.className='';
+		// 	s5.className='';
+		// }
+		// // 鼠标滑过第四个小图时的操作
+		// s4.onmouseover=function () {
+		// 	b.src=this.src;
+		// 	this.className='act';
+		// 	s1.className='';
+		// 	s2.className='';
+		// 	s3.className='';
+		// 	s5.className='';
+		// }
+		// // 鼠标滑过第五个小图时的操作
+		// s5.onmouseover=function () {
+		// 	b.src=this.src
+		// 	this.className='act';
+		// 	s1.className='';
+		// 	s2.className='';
+		// 	s3.className='';
+		// 	s4.className='';
+		// }
+
+
+			</script>
+</body>
+</html>
